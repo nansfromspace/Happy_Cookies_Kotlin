@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>MainActivity.kt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+MainActivity.kt</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com.nansfromspace.happycookies</span>
+
+<span class="s1">import android.os.Bundle</span>
+<span class="s1">import android.view.View</span>
+<span class="s1">import android.widget.TextView</span>
+<span class="s1">import androidx.appcompat.app.AppCompatActivity</span>
+<span class="s1">import com.nansfromspace.happycookies.databinding.ActivityMainBinding</span>
+<span class="s1">import kotlin.random.Random</span>
+
+<span class="s0">class </span><span class="s1">MainActivity : AppCompatActivity() {</span>
+    <span class="s1">private lateinit </span><span class="s0">var </span><span class="s1">binding: ActivityMainBinding</span>
+    <span class="s1">override </span><span class="s0">fun </span><span class="s1">onCreate(savedInstanceState: Bundle?) {</span>
+        <span class="s0">super</span><span class="s1">.onCreate(savedInstanceState)</span>
+        <span class="s1">binding = ActivityMainBinding.inflate(layoutInflater)</span>
+        <span class="s1">setContentView(binding.root)</span>
+    <span class="s1">}</span>
+
+    <span class="s0">fun </span><span class="s1">biscoitinhoClick(view: View){</span>
+        <span class="s0">val </span><span class="s1">frases: List&lt;String&gt; = arrayListOf(</span>
+            <span class="s2">&quot;Sem o fogo do entusiasmo, não há o calor da vitória.&quot;</span><span class="s0">,</span>
+            <span class="s2">&quot;Todas as coisas são difíceis antes de se tornarem fáceis.&quot;</span><span class="s0">,</span>
+            <span class="s2">&quot;Você é do tamanho do seu sonho.&quot;</span><span class="s0">,</span>
+            <span class="s2">&quot;Coragem é a resistência ao medo, domínio do medo, e não a ausência do medo.&quot;</span><span class="s0">,</span>
+            <span class="s2">&quot;Espere pelo mais sábio dos conselhos: o tempo.&quot;</span><span class="s0">,</span>
+            <span class="s2">&quot;A paciência na adversidade é sinal de um coração sensível&quot;</span><span class="s0">,</span>
+            <span class="s2">&quot;O riso é a menor distância entre duas pessoas.&quot;</span><span class="s0">,</span>
+            <span class="s2">&quot;Lamentar aquilo que não temos é desperdiçar aquilo que já possuímos.&quot;</span><span class="s0">,</span>
+            <span class="s2">&quot;A maior de todas as torres começa no solo.&quot;</span><span class="s0">,</span>
+            <span class="s2">&quot;Demonstre amor e alegria em todas as oportunidades e verá que a paz nasce dentro de si.&quot;</span><span class="s0">,</span>
+            <span class="s2">&quot;Aquele que se importa com o sentimento dos outros, não é um tolo.&quot;</span><span class="s0">,</span>
+            <span class="s2">&quot;O nosso primeiro e último amor é… o amor-próprio.&quot;</span><span class="s0">,</span>
+            <span class="s2">&quot;Faça pequenas coisas hoje e coisas maiores lhe serão confiadas amanhã.&quot;</span><span class="s0">,</span>
+            <span class="s2">&quot;Quem olha para fora sonha; quem olha para dentro acorda.&quot;</span><span class="s0">,</span>
+            <span class="s2">&quot;Podemos escolher o que semear, mas somos obrigados a colher o que plantamos.&quot;</span><span class="s1">)</span>
+        <span class="s0">val </span><span class="s1">fraseSorteada = frases.random()</span>
+        <span class="s1">binding.txtSorte.text = </span><span class="s2">&quot;</span><span class="s0">$</span><span class="s1">fraseSorteada</span><span class="s2">&quot;</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+
+</pre>
+</body>
+</html>

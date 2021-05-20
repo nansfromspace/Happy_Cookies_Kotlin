@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/happycookies_color"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/BtnSorte"
+        android:layout_width="211dp"
+        android:layout_height="78dp"
+        android:backgroundTint="#FF5757"
+        android:onClick="biscoitinhoClick"
+        android:text="DESCUBRA!"
+        android:textSize="22dp"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.707" />
+
+    <TextView
+        android:id="@+id/txtSorte"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="50dp"
+        android:autoText="false"
+        android:clickable="false"
+        android:elegantTextHeight="true"
+        android:textColor="#E3E3E3"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:autoSizeTextType="uniform"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnSorte" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="438dp"
+        android:layout_height="471dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.107"
+        app:srcCompat="@drawable/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
